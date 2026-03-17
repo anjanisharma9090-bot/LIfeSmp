@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeMC Server — Join the Adventure! ⚔️</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/your-code-here.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="bg-gradient"></div>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="text-accent">Life</span>MC
+            </div>
+            <nav class="desktop-nav">
+                <a href="#home">Home</a>
+                <a href="#join">Join</a>
+                <a href="#features">Features</a>
+                <a href="https://discord.gg/your-invite" target="_blank" class="btn-discord"><i class="fab fa-discord"></i> Discord</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container grid-2">
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">Explore, conquer, <span class="text-accent">survive</span> together.</h1>
+                <p class="hero-subtitle">The ultimate survival experience awaits. Jump in, explore vast lands, build incredible structures, and survive with friends!</p>
+                <div class="hero-btns">
+                    <a href="#join" class="btn-primary glow-button">Play Now</a>
+                    <a href="https://discord.gg/your-invite" target="_blank" class="btn-secondary"><i class="fab fa-discord"></i> Join Community</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <img src="https://via.placeholder.com/600x600/1e0d4a/ffffff?text=Add+Hero+Character+PNG" alt="Minecraft Character" class="hero-character float-animation">
+                <div class="glow-element cyan-glow fade-in-delay-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-mockup section-padding">
+        <div class="container text-center">
+            <div class="phone-mockup-wrapper fade-in-up">
+                <img src="https://via.placeholder.com/320x640/222/aaa?text=Mobile+Site+Preview" alt="Mobile Site Mockup" class="phone-frame">
+                <img src="https://via.placeholder.com/600x400/1e0d4a/ffffff?text=Floating+MC+Asset" alt="Decorative Asset" class="mc-asset asset-float-1 asset-hide-mobile">
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join-section section-padding dark-bg">
+        <div class="container text-center fade-in-up">
+            <span class="section-subtitle">READY TO START YOUR ADVENTURE?</span>
+            <h2 class="section-title">Join <span class="text-accent">LifeMC</span> Today!</h2>
+            <p class="section-desc">Copy the server address and port below, open Minecraft Java Edition, and add us to your server list. ⚔️ @everyone</p>
+            
+            <div class="server-cards grid-2">
+                <div class="server-card fade-in-delay-1">
+                    <div class="card-icon"><i class="fas fa-network-wired text-cyan"></i></div>
+                    <h3>Java IP Address</h3>
+                    <div class="ip-block">
+                        <span id="serverIP" class="ip-text">lifemc.flexynode.in</span>
+                        <button class="copy-btn tooltip" onclick="copyText('serverIP')">
+                            <i class="far fa-copy"></i>
+                            <span class="tooltiptext">Copy IP</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="server-card fade-in-delay-2">
+                    <div class="card-icon"><i class="fas fa-door-open text-purple"></i></div>
+                    <h3>Server Port</h3>
+                    <div class="ip-block">
+                        <span id="serverPort" class="ip-text">25566</span>
+                        <button class="copy-btn tooltip" onclick="copyText('serverPort')">
+                            <i class="far fa-copy"></i>
+                            <span class="tooltiptext">Copy Port</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features section-padding">
+        <div class="container fade-in-up">
+            <div class="grid-2 reverse-mobile">
+                <div class="feature-visual">
+                    <div class="glow-element purple-glow fade-in-delay-1"></div>
+                     <img src="https://via.placeholder.com/600x600/1e0d4a/ffffff?text=Character+with+Wand" alt="Minecraft Character Wand" class="feature-character float-animation">
+                </div>
+                <div class="feature-content">
+                    <span class="section-subtitle text-cyan">GAME MODES & COMMUNITY</span>
+                    <h2 class="section-title">Build & Battle!</h2>
+                    <p class="section-desc">We offer a highly optimized survival experience with regular community events, player-driven economy, and a grief-free environment. Use your imagination, craft your legacy!</p>
+                    <div class="mini-games-grid">
+                        <div class="minigame-icon"><img src="https://img.icons8.com/isometric/50/ffffff/sword.png" alt="Sword Icon"></div>
+                        <div class="minigame-icon"><img src="https://img.icons8.com/isometric/50/ffffff/diamond.png" alt="Diamond Icon"></div>
+                        <div class="minigame-icon"><img src="https://img.icons8.com/isometric/50/ffffff/shield.png" alt="Shield Icon"></div>
+                        <div class="minigame-icon"><img src="https://img.icons8.com/isometric/50/ffffff/campfire.png" alt="Campfire Icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content text-center">
+            <div class="logo-small"><span class="text-accent">Life</span>MC</div>
+            <p class="copyright">&copy; 2023 LifeMC Network. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="designer-watermark">
+                Designed with ❤️ by <span class="text-cyan">Tanish</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
